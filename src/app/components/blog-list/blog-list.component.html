@@ -1,1 +1,23 @@
-<p>blog-list works!</p>
+<!-- Listado de noticias recibidas desde el componente padre -->
+<div class="noticias-cabecera">
+    <span class="total-noticias">{{ arrayNoticias.length }} publicaciones</span>
+    <h2>Últimas noticias</h2>
+</div>
+
+<div class="lista-noticias">
+    @for (noticia of arrayNoticias; track noticia.id) {
+    <article class="tarjeta">
+        <div class="tarjeta-imagen">
+            <img [src]="noticia.imagen" [alt]="noticia.titulo" />
+            <span class="tarjeta-fecha">{{ noticia.fecha }}</span>
+        </div>
+        <div class="tarjeta-cuerpo">
+            <h3>{{ noticia.titulo }}</h3>
+            <p>{{ noticia.texto }}</p>
+        </div>
+    </article>
+    } @empty {
+    <p class="sin-noticias">No hay noticias publicadas aún.</p>
+    }
+
+</div>

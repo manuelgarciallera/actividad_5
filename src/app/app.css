@@ -1,0 +1,43 @@
+header {
+    background-color: #1a1a1a;
+    color: #f0ece2;
+    text-align: center;
+    padding: 20px 30px 16px;
+    border-bottom: 4px solid #c0392b;
+}
+
+.cabecera-categoria {
+    display: block;
+    font-size: 0.68rem;
+    letter-spacing: 4px;
+    color: #c0392b;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+header h1 {
+    font-size: 2.8rem;
+    font-weight: 900;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    line-height: 1;
+    font-style: italic;
+}
+
+.cabecera-fecha {
+    display: block;
+    font-size: 0.72rem;
+    color: #888;
+    letter-spacing: 2px;
+    margin-top: 6px;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #666;
+    text-align: center;
+    padding: 14px;
+    font-size: 0.78rem;
+    letter-spacing: 0.5px;
+    border-top: 1px solid #333;
+}

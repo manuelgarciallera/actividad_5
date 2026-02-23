@@ -1,0 +1,83 @@
+/* Cabecera del formulario */
+.form-cabecera {
+    margin-bottom: 24px;
+    border-bottom: 2px solid #1a1a1a;
+    padding-bottom: 12px;
+}
+
+.form-etiqueta {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: #888;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.form-cabecera h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: #1a1a1a;
+    font-style: italic;
+}
+
+/* Campos del formulario */
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.formulario label {
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.formulario input,
+.formulario textarea {
+    width: 100%;
+    padding: 9px 10px;
+    margin-bottom: 16px;
+    border: 1px solid #bbb;
+    border-bottom: 2px solid #1a1a1a;
+    background-color: #faf8f3;
+    font-size: 0.9rem;
+    font-family: inherit;
+    box-sizing: border-box;
+    border-radius: 0;
+    transition: border-color 0.2s;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+    border-bottom-color: #c0392b;
+    background-color: #fff;
+}
+
+.formulario textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1a1a1a;
+    color: #f0ece2;
+    border: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-family: inherit;
+}
+
+.formulario button:hover {
+    background-color: #c0392b;
+}

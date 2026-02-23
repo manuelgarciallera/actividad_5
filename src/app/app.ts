@@ -8,5 +8,5 @@ import { BlogComponent } from './components/blog/blog.component';
   styleUrl: './app.css'
 })
 export class App {
-
+  title = 'actividad_5';
 }

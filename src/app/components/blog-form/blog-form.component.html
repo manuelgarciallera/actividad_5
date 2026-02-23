@@ -1,1 +1,23 @@
-<p>blog-form works!</p>
+<!-- Formulario para publicar una nueva noticia -->
+<div class="form-cabecera">
+    <span class="form-etiqueta">REDACCIÓN</span>
+    <h2>Nueva entrada</h2>
+</div>
+
+<div class="formulario">
+
+    <label for="titulo">Titular</label>
+    <input type="text" id="titulo" placeholder="Escribe el titular..." [(ngModel)]="nuevaNoticia.titulo" />
+
+    <label for="imagen">URL de imagen</label>
+    <input type="text" id="imagen" placeholder="https://..." [(ngModel)]="nuevaNoticia.imagen" />
+
+    <label for="texto">Cuerpo de la noticia</label>
+    <textarea id="texto" placeholder="Desarrolla aquí la noticia..." [(ngModel)]="nuevaNoticia.texto"></textarea>
+
+    <label for="fecha">Fecha de publicación</label>
+    <input type="date" id="fecha" [(ngModel)]="nuevaNoticia.fecha" />
+
+    <button (click)="guardarNoticia()">Publicar</button>
+
+</div>

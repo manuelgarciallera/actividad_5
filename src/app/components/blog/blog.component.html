@@ -1,1 +1,12 @@
-<p>blog works!</p>
+<!-- Componente padre: conecta el formulario y el listado -->
+<div class="blog-layout">
+
+    <aside class="columna-formulario">
+        <app-blog-form (noticiaEmit)="insertarNoticia($event)"></app-blog-form>
+    </aside>
+
+    <main class="columna-noticias">
+        <app-blog-list [arrayNoticias]="arrayNoticias"></app-blog-list>
+    </main>
+
+</div>

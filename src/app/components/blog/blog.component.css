@@ -1,0 +1,42 @@
+/* Layout de dos columnas */
+.blog-layout {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 60px);
+}
+
+.columna-formulario {
+    width: 30%;
+    min-width: 260px;
+    background-color: #f0ece2;
+    border-right: 3px double #1a1a1a;
+    padding: 30px 24px;
+}
+
+.columna-noticias {
+    flex: 1;
+    min-width: 300px;
+    padding: 30px 28px;
+    background-color: #faf8f3;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .blog-layout {
+        flex-direction: column;
+    }
+
+    .columna-formulario {
+        width: 100%;
+        border-right: none;
+        border-bottom: 3px double #1a1a1a;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .columna-formulario,
+    .columna-noticias {
+        padding: 20px 16px;
+    }
+}
